@@ -1,0 +1,1 @@
+pipeline {agent anystages {stage('Build Automation') {steps {sh'''echo "BUILD NUMBER: ${BUILD_NUMBER}"cd dt-ejbmvnclean testcd ../Restmvnclean testcd ../webmvnclean test'''}}}}
