@@ -6,11 +6,11 @@ pipeline {
         sh '''
           echo "BUILD NUMBER: ${BUILD_NUMBER}"
           cd dt-ejb
-          mvn clean test
+          /usr/local/apache-maven-3.5.2/bin/mvn clean test
           cd ../Rest
-          mvn clean test
+          /usr/local/apache-maven-3.5.2/bin/mvn clean test
           cd ../web
-          mvn clean test
+          /usr/local/apache-maven-3.5.2/bin/mvn clean test
         '''
       }
     }
